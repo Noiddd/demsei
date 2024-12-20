@@ -20,7 +20,7 @@ import {
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
-const SIDEBAR_WIDTH = "15rem"; // initially 16rem
+const SIDEBAR_WIDTH = "11rem"; // initially 16rem
 const SIDEBAR_WIDTH_MOBILE = "12rem"; // initially 18rem
 const SIDEBAR_WIDTH_ICON = "3rem";
 const SIDEBAR_KEYBOARD_SHORTCUT = "b";
@@ -430,7 +430,7 @@ const SidebarMenu = React.forwardRef(({ className, ...props }, ref) => (
   <ul
     ref={ref}
     data-sidebar="menu"
-    className={cn("flex w-full min-w-0 flex-col gap-7 pl-16", className)}
+    className={cn("flex w-full min-w-0 flex-col gap-7", className)}
     {...props}
   />
 ));
